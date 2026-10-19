@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm --prefix src run dev",
-    "build": "npm --prefix src run build",
+    "build": "npm --prefix src run build && node scripts/prepare-tauri-dist.mjs",
     "preview": "npm --prefix src run preview",
     "tauri:dev": "tauri dev --config src-tauri/tauri.conf.json",
+    "tauri:build": "tauri build --config src-tauri/tauri.conf.json",
+    "tauri:build:portable": "tauri build --config src-tauri/tauri.conf.json --no-bundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
