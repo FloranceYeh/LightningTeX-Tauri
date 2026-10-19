@@ -1,0 +1,19 @@
+{
+  "name": "LightningTeX",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm --prefix src run dev",
+    "build": "npm --prefix src run build",
+    "preview": "npm --prefix src run preview",
+    "tauri:dev": "tauri dev --config src-tauri/tauri.conf.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.3"
+  }
+}
